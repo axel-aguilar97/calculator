@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Calculator</title>
+
+		<link rel="stylesheet" href="index.css" />
+	</head>
+
+	<body>
+		<div class="cConteiner">
+			<div class="cCalculator">
+				<div class="cDisplay">
+					<div id="previousValue"></div>
+					<div id="currentValue"></div>
+				</div>
+				<button onclick="display.removeAll();">C</button>
+				<button onclick="display.remove();">&larr;</button>
+				<button>%</button>
+				<button class="cOperator" value="divide">÷</button>
+
+				<button class="cNumber">7</button>
+				<button class="cNumber">8</button>
+				<button class="cNumber">9</button>
+				<button class="cOperator" value="multiply">X</button>
+
+				<button class="cNumber">4</button>
+				<button class="cNumber">5</button>
+				<button class="cNumber">6</button>
+				<button class="cOperator" value="subtract">-</button>
+
+				<button class="cNumber">1</button>
+				<button class="cNumber">2</button>
+				<button class="cNumber">3</button>
+				<button class="cOperator" value="add">+</button>
+
+				<button>?</button>
+				<button class="cNumber">0</button>
+				<button class="cNumber">.</button>
+				<button class="cOperator" value="equal">=</button>
+			</div>
+		</div>
+
+		<script src="index.js" type="text/javascript" defer></script>
+		<script src="classes/Display.js" type="text/javascript"></script>
+		<script src="classes/Calculator.js" type="text/javascript"></script>
+	</body>
+</html>
